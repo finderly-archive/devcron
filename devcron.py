@@ -101,8 +101,7 @@ def make_cmd_runner(cmd):
 
     """
     def run_cmd():
-#        return Popen(cmd, shell=True, close_fds=True)
-        return Popen(cmd, shell=True, close_fds=False)
+        return Popen(cmd, shell=True, close_fds=True)
     run_cmd.__doc__ = cmd
     return run_cmd
 
